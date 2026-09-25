@@ -10,6 +10,9 @@
 		AAAAAAAAAAAAAAAAAAAA0011 /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAAAAAAAAAAAAAAAAA000D /* iOSApp.swift */; };
 		AAAAAAAAAAAAAAAAAAAA0012 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAAAAAAAAAAAAAAAAA000E /* ContentView.swift */; };
 		AAAAAAAAAAAAAAAAAAAA0013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAAAAAAAAAAAAAAAAAAA000F /* Assets.xcassets */; };
+		AAAAAAAAAAAAAAAAAAAA0021 /* RoomActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAAAAAAAAAAAAAAAAA0020 /* RoomActivityAttributes.swift */; };
+		AAAAAAAAAAAAAAAAAAAA0023 /* RoomLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAAAAAAAAAAAAAAAAA0022 /* RoomLiveActivity.swift */; };
+		AAAAAAAAAAAAAAAAAAAA0025 /* RoomTemperatureIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAAAAAAAAAAAAAAAAA0024 /* RoomTemperatureIntent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +21,9 @@
 		AAAAAAAAAAAAAAAAAAAA000E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AAAAAAAAAAAAAAAAAAAA000F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAAAAAAAAAAAAAAAAAAA0010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAAAAAAAAAAAAAAAAAAA0020 /* RoomActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomActivityAttributes.swift; sourceTree = "<group>"; };
+		AAAAAAAAAAAAAAAAAAAA0022 /* RoomLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomLiveActivity.swift; sourceTree = "<group>"; };
+		AAAAAAAAAAAAAAAAAAAA0024 /* RoomTemperatureIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomTemperatureIntent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +50,9 @@
 			children = (
 				AAAAAAAAAAAAAAAAAAAA000D /* iOSApp.swift */,
 				AAAAAAAAAAAAAAAAAAAA000E /* ContentView.swift */,
+				AAAAAAAAAAAAAAAAAAAA0020 /* RoomActivityAttributes.swift */,
+				AAAAAAAAAAAAAAAAAAAA0022 /* RoomLiveActivity.swift */,
+				AAAAAAAAAAAAAAAAAAAA0024 /* RoomTemperatureIntent.swift */,
 				AAAAAAAAAAAAAAAAAAAA000F /* Assets.xcassets */,
 				AAAAAAAAAAAAAAAAAAAA0010 /* Info.plist */,
 			);
@@ -148,6 +157,9 @@
 			files = (
 				AAAAAAAAAAAAAAAAAAAA0012 /* ContentView.swift in Sources */,
 				AAAAAAAAAAAAAAAAAAAA0011 /* iOSApp.swift in Sources */,
+				AAAAAAAAAAAAAAAAAAAA0021 /* RoomActivityAttributes.swift in Sources */,
+				AAAAAAAAAAAAAAAAAAAA0023 /* RoomLiveActivity.swift in Sources */,
+				AAAAAAAAAAAAAAAAAAAA0025 /* RoomTemperatureIntent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
