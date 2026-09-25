@@ -35,6 +35,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Refresh
 import androidx.compose.material.icons.rounded.Sensors
 import androidx.compose.material.icons.rounded.Thermostat
+import androidx.compose.material.icons.rounded.ViewInAr
 import androidx.compose.material.icons.rounded.WaterDrop
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -82,6 +83,7 @@ private const val SCALE_MAX = 40f
 fun TemperatureScreen(
     state: TemperatureUiState,
     onRetry: () -> Unit,
+    onOpenSlice: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
     val reading = state.reading
@@ -102,6 +104,7 @@ fun TemperatureScreen(
                 sensorId = reading?.sensorId ?: "—",
                 streaming = reading != null && state.errorMessage == null,
                 accent = palette.accent,
+                onOpenSlice = onOpenSlice,
                 modifier = Modifier.entrance(rememberEntrance(appeared, 0)),
             )
 
@@ -182,6 +185,7 @@ private fun Header(
     sensorId: String,
     streaming: Boolean,
     accent: Color,
+    onOpenSlice: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
     Row(
@@ -202,16 +206,28 @@ private fun Header(
                 color = Color.White.copy(alpha = 0.55f),
             )
         }
-        Pill(
-            text = sensorId,
-            color = accent,
-            leading = {
-                LiveDot(
-                    active = streaming,
-                    color = if (streaming) accent else Color(0xFFFF6B6B),
-                )
-            },
-        )
+        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            Pill(
+                text = sensorId,
+                color = accent,
+                leading = {
+                    LiveDot(
+                        active = streaming,
+                        color = if (streaming) accent else Color(0xFFFF6B6B),
+                    )
+                },
+            )
+            Box(
+                modifier = Modifier
+                    .size(36.dp)
+                    .clip(CircleShape)
+                    .background(accent.copy(alpha = 0.16f))
+                    .clickable(onClick = onOpenSlice),
+                contentAlignment = Alignment.Center,
+            ) {
+                Icon(Icons.Rounded.ViewInAr, contentDescription = "Irisan 3D", tint = accent, modifier = Modifier.size(20.dp))
+            }
+        }
     }
 }
 
