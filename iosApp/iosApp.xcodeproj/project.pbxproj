@@ -13,6 +13,7 @@
 		AAAAAAAAAAAAAAAAAAAA0021 /* RoomActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAAAAAAAAAAAAAAAAA0020 /* RoomActivityAttributes.swift */; };
 		AAAAAAAAAAAAAAAAAAAA0023 /* RoomLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAAAAAAAAAAAAAAAAA0022 /* RoomLiveActivity.swift */; };
 		AAAAAAAAAAAAAAAAAAAA0025 /* RoomTemperatureIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAAAAAAAAAAAAAAAAA0024 /* RoomTemperatureIntent.swift */; };
+		AAAAAAAAAAAAAAAAAAAA0027 /* RoomySensorThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAAAAAAAAAAAAAAAAA0026 /* RoomySensorThread.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AAAAAAAAAAAAAAAAAAAA0020 /* RoomActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomActivityAttributes.swift; sourceTree = "<group>"; };
 		AAAAAAAAAAAAAAAAAAAA0022 /* RoomLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomLiveActivity.swift; sourceTree = "<group>"; };
 		AAAAAAAAAAAAAAAAAAAA0024 /* RoomTemperatureIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomTemperatureIntent.swift; sourceTree = "<group>"; };
+		AAAAAAAAAAAAAAAAAAAA0026 /* RoomySensorThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomySensorThread.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 				AAAAAAAAAAAAAAAAAAAA0020 /* RoomActivityAttributes.swift */,
 				AAAAAAAAAAAAAAAAAAAA0022 /* RoomLiveActivity.swift */,
 				AAAAAAAAAAAAAAAAAAAA0024 /* RoomTemperatureIntent.swift */,
+				AAAAAAAAAAAAAAAAAAAA0026 /* RoomySensorThread.swift */,
 				AAAAAAAAAAAAAAAAAAAA000F /* Assets.xcassets */,
 				AAAAAAAAAAAAAAAAAAAA0010 /* Info.plist */,
 			);
@@ -160,6 +163,7 @@
 				AAAAAAAAAAAAAAAAAAAA0021 /* RoomActivityAttributes.swift in Sources */,
 				AAAAAAAAAAAAAAAAAAAA0023 /* RoomLiveActivity.swift in Sources */,
 				AAAAAAAAAAAAAAAAAAAA0025 /* RoomTemperatureIntent.swift in Sources */,
+				AAAAAAAAAAAAAAAAAAAA0027 /* RoomySensorThread.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

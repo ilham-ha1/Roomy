@@ -9,6 +9,7 @@ import my.openlab.roomy.data.repository.DemoTemperatureRepository
 import my.openlab.roomy.data.repository.TemperatureRepositoryImpl
 import my.openlab.roomy.domain.repository.TemperatureRepository
 import my.openlab.roomy.domain.usecase.ObserveTemperature
+import my.openlab.roomy.platform.sensorDispatcher
 import my.openlab.roomy.presentation.temperature.TemperatureViewModel
 import org.koin.core.module.Module
 import org.koin.core.module.dsl.viewModel
@@ -45,7 +46,7 @@ fun appModule(config: AppConfig = AppConfig()): Module = module {
         }
     }
 
-    factory { ObserveTemperature(repository = get()) }
+    factory { ObserveTemperature(repository = get(), dispatcher = sensorDispatcher) }
 
     viewModel {
         TemperatureViewModel(

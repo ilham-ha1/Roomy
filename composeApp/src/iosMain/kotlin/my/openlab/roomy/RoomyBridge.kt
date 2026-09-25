@@ -6,8 +6,10 @@ import my.openlab.roomy.di.appModule
 import my.openlab.roomy.domain.model.Comfort
 import my.openlab.roomy.domain.model.TemperatureReading
 import my.openlab.roomy.domain.usecase.ObserveTemperature
+import my.openlab.roomy.platform.SensorThreadRunner
 import my.openlab.roomy.presentation.theme.label
 import org.koin.dsl.koinApplication
+import kotlin.concurrent.Volatile
 
 /** What Swift sees of a reading. Plain types only: no enum, no Instant, no Double? (IOS_NOTES.md §3). */
 class RoomSnapshot(
@@ -26,6 +28,10 @@ interface LiveActivityController {
 object RoomyBridge {
 
     var liveActivity: LiveActivityController? = null
+
+    /** Swift-owned thread for sensor work. Register at launch, before the UI starts. */
+    @Volatile
+    var sensorThread: SensorThreadRunner? = null
 
     // Own Koin instance: an App Intent can run before (or without) the Compose UI starting its own.
     private val koin by lazy { koinApplication { modules(appModule()) }.koin }
